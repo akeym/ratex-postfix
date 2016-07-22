@@ -1,0 +1,17 @@
+Show Postfix queue data on a Ratex currency exchange rate display.
+
+notes:
+- Baud rate defaults to 300
+- Battery holds RTC data, display data and settings.. if its dead, must be configured each time
+- Serial port is basically just another way to send commands like the IR remote does
+- Display row/column numbers may not match actual physical layout!
+- Display has small serial buffer, so data must be rate limited
+- originally made by Friend Spring Industrial Co
+
+mq.py should be on the mail server(s)
+
+checkqueues.sh sits on a jump host or web server
+
+ratex.py runs on computer connected to Ratex display
+
+ratex-time.py sets clock
