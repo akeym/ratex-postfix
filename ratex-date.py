@@ -14,5 +14,5 @@ s.baudrate=9600
 s.port = '/dev/ttyUSB0'
 
 s.open()
-s.write(chr(14) + PASSWORD + chr(161) + chr(1) + time.strftime('%w%y%m%d%H%M%S') + chr(14))
+s.write(chr(14) + PASSWORD + chr(26) + chr(1) + time.strftime('%w%y%m%d%H%M%S') + chr(14))
 s.close()
